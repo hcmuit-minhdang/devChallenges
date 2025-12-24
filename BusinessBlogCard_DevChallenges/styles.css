@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    background-color: #f3f5f8;
+    padding: 5rem 1rem;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.card {
+    background-color: #ffffff;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 8px 8px 20px rgba(85, 85, 85, 0.08);
+}
+
+.card-image {
+    position: relative;
+}
+
+.card-img {
+    width: 100%;
+    display: block;
+}
+
+.card-overlay {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+}
+
+.card-content {
+    padding: 1rem;
+}
+
+.card-title {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    color: #111729;
+    margin-bottom: 1rem;
+}
+
+.card-description {
+    color: #677489;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.card-author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-top: 2px solid #f2f5f9;
+}
+
+.author-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 4px solid #f2f5f9;
+}
+
+.author-name {
+    font-weight: bold;
+    color: #111729;
+}
+
+.author-role {
+    color: #677489;
+    font-size: 14px;
+}
+
+.page-footer {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 0.875rem;
+    color: #677489;
+}
+
+.page-footer a {
+    color: #111729;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+@media (min-width: 640px) {
+    body {
+        padding: 0;
+        display: grid;
+        place-items: center;
+        height: 100vh;
+    }
+}
